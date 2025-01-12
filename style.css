@@ -152,4 +152,28 @@ body .projects .project .description .links {
 body .projects .project .description .links a {
   border-bottom: 1px solid var(--primary-color);
   font-size: 20px;
+}
+body .certificates .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0 100px 0;
+  font-size: var(--text-font);
+}
+body .certificates .certificate ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+body .certificates .certificate ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body .certificates .certificate ul li a {
+  border-bottom: 1px solid var(--primary-color);
+  width: 40%;
+}
+body .certificates .certificate ul li img {
+  width: 300px;
 }/*# sourceMappingURL=style.css.map */

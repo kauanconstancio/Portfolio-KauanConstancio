@@ -160,4 +160,32 @@ body{
 
         }
     }
+    .certificates{
+        .title{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 100px 0 100px 0;
+            font-size: var(--text-font);
+        }
+        .certificate{
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 60px;
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    a{
+                        border-bottom: 1px solid var(--primary-color);
+                        width: 40%;
+                    }
+                    img{
+                        width: 300px;
+                    }
+                }
+            }
+        }
+    }
 }
