@@ -136,7 +136,7 @@ body .projects .project {
 }
 body .projects .project img {
   width: 300px;
-  border-radius: 16px;
+  border-radius: 10px;
 }
 body .projects .project .description {
   display: flex;
@@ -176,4 +176,12 @@ body .certificates .certificate ul li a {
 }
 body .certificates .certificate ul li img {
   width: 300px;
+  border-radius: 10px;
+}
+body .experience .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0 100px 0;
+  font-size: var(--text-font);
 }/*# sourceMappingURL=style.css.map */
