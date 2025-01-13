@@ -160,6 +160,33 @@ body .certificates .title {
   margin: 100px 0 100px 0;
   font-size: var(--text-font);
 }
+body .certificates .filter {
+  margin: 0 0 100px 0;
+}
+body .certificates .filter ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+body .certificates .filter ul li button {
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 18px;
+}
+body .certificates .filter ul li .formations {
+  border: 2px solid #118DD5;
+}
+body .certificates .filter ul li .alura {
+  border: 2px solid #41F0FD;
+}
+body .certificates .filter ul li .rocketseat {
+  border: 2px solid #7159C1;
+}
+body .certificates .filter ul li .bradesco {
+  border: 2px solid #DC1432;
+}
 body .certificates .certificate ul {
   display: flex;
   flex-wrap: wrap;
