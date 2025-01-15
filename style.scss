@@ -144,6 +144,8 @@ body{
             align-items: center;
             gap: 40px;
             .project{
+                display: flex;
+                flex-direction: column;
                 gap: 10px;
                 padding: 10px;
                 img{
@@ -153,6 +155,7 @@ body{
                 .description{
                     display: flex;
                     flex-direction: column;
+                    gap: 5px;
                     h2{
                         font-size: var(--text-font);
                     }
@@ -213,9 +216,6 @@ body{
                 flex-wrap: wrap;
                 gap: 60px;
                 li{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
                     a{
                         border-bottom: 1px solid var(--primary-color);
                         width: 40%;
@@ -224,6 +224,15 @@ body{
                         width: 300px;
                         border-radius: 10px;
                     }
+                }
+                .item{
+                    display: none;
+                }
+                .show{
+                    display: block;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
                 }
             }
         }

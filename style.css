@@ -142,6 +142,8 @@ body .projects .items {
   gap: 40px;
 }
 body .projects .items .project {
+  display: flex;
+  flex-direction: column;
   gap: 10px;
   padding: 10px;
 }
@@ -152,6 +154,7 @@ body .projects .items .project img {
 body .projects .items .project .description {
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
 body .projects .items .project .description h2 {
   font-size: var(--text-font);
@@ -204,11 +207,6 @@ body .certificates .certificate ul {
   flex-wrap: wrap;
   gap: 60px;
 }
-body .certificates .certificate ul li {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
 body .certificates .certificate ul li a {
   border-bottom: 1px solid var(--primary-color);
   width: 40%;
@@ -216,6 +214,15 @@ body .certificates .certificate ul li a {
 body .certificates .certificate ul li img {
   width: 300px;
   border-radius: 10px;
+}
+body .certificates .certificate ul .item {
+  display: none;
+}
+body .certificates .certificate ul .show {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 body .experience .title {
   display: flex;
