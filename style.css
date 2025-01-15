@@ -43,6 +43,11 @@ body .profile {
   gap: 80px;
   margin: 50px 0 0 0;
 }
+body .profile .infos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 body .profile .infos h2 {
   font-size: var(--text-font);
 }
@@ -53,6 +58,7 @@ body .profile .infos h1 {
 body .profile .infos ul {
   display: flex;
   gap: 40px;
+  margin: 50px 0 0 0;
 }
 body .profile .infos ul li a {
   font-weight: 600;
