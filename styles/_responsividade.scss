@@ -1,4 +1,4 @@
-@media (max-width: 420px) {
+@media (max-width: 440px) {
     body{
         padding: 20px;
         .header{
@@ -33,6 +33,27 @@
                 display: none;
             }
         }
-        
+        .tecnologies{
+            margin: 40px 0 0 0;
+            .slider{
+                .img{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+            }
+        }
+        .projects{
+            .items{
+            display: flex;
+            flex-direction: column;
+                .project{
+                    img{
+                        width: 80vw;
+                    }
+                }
+            }
+
+        }
     }
 }
