@@ -165,6 +165,31 @@ body .certificates .filter ul li .rocketseat {
 body .certificates .filter ul li .bradesco {
   border: 2px solid #DC1432;
 }
+body .certificates .filter ul li .formations:focus {
+  background-color: #118DD5;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+body .certificates .filter ul li .alura:focus {
+  background-color: #41F0FD;
+  color: var(--background-color);
+  border: 2px solid var(--background-color);
+}
+body .certificates .filter ul li .rocketseat:focus {
+  background-color: #7159C1;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+body .certificates .filter ul li .bradesco:focus {
+  background-color: #DC1432;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+body .certificates .filter ul li .all:focus {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border: 2px solid var(--background-color);
+}
 body .certificates .certificate ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
