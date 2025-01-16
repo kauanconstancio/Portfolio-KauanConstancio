@@ -1,0 +1,38 @@
+@media (max-width: 420px) {
+    body{
+        padding: 20px;
+        .header{
+            display: none;
+        }
+        .profile{
+            margin: 40px 0 0 0;
+            .infos{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .title{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    h1{
+                        font-size: 30px;
+                    }
+                }
+                .text{
+                    order: 3;
+                    text-align: center;
+                }
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+                }
+            }
+            .image{
+                display: none;
+            }
+        }
+        
+    }
+}

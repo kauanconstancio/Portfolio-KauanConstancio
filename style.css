@@ -193,4 +193,42 @@ body .experience .title {
   justify-content: center;
   margin: 100px 0 100px 0;
   font-size: var(--text-font);
+}
+
+@media (max-width: 420px) {
+  body {
+    padding: 20px;
+  }
+  body .header {
+    display: none;
+  }
+  body .profile {
+    margin: 40px 0 0 0;
+  }
+  body .profile .infos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .profile .infos .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .profile .infos .title h1 {
+    font-size: 30px;
+  }
+  body .profile .infos .text {
+    order: 3;
+    text-align: center;
+  }
+  body .profile .infos ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  body .profile .image {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
