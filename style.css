@@ -83,10 +83,10 @@ body .tecnologies h2 {
 body .tecnologies .slider .img {
   display: flex;
   align-items: center;
-  gap: 200px;
+  gap: 100px;
 }
 body .tecnologies .slider .img img {
-  width: 100px;
+  width: 80px;
 }
 body .projects {
   margin: 80px 0 0 0;
@@ -173,7 +173,7 @@ body .certificates .certificate ul {
 }
 body .certificates .certificate ul li a {
   border-bottom: 1px solid var(--primary-color);
-  width: 31%;
+  width: 120px;
 }
 body .certificates .certificate ul li img {
   width: 300px;
@@ -193,29 +193,4 @@ body .experience .title {
   justify-content: center;
   margin: 100px 0 100px 0;
   font-size: var(--text-font);
-}
-
-@media (max-width: 415px) {
-  body {
-    padding: 20px;
-    width: 100%;
-  }
-  body .header {
-    display: none;
-  }
-  body .profile .infos .title h1 {
-    font-size: 28px;
-  }
-  body .profile .infos .text {
-    font-size: 18px;
-  }
-  body .profile .infos ul {
-    gap: 10px;
-  }
-  body .profile .infos ul li a {
-    font-size: 12px;
-  }
-  body .profile .image img {
-    display: none;
-  }
 }/*# sourceMappingURL=style.css.map */

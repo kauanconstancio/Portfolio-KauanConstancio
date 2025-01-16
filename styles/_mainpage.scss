@@ -68,9 +68,9 @@ body{
             .img{
                 display: flex;
                 align-items: center;
-                gap: 200px;
+                gap: 100px;
                 img{
-                    width: 100px;
+                    width: 80px;
                 }
             }
 
@@ -165,7 +165,7 @@ body{
                 li{
                     a{
                         border-bottom: 1px solid var(--primary-color);
-                        width: 31%;
+                        width: 120px;
                     }
                     img{
                         width: 300px;
