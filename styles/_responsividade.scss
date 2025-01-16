@@ -1,3 +1,86 @@
+// Responsividade para Tablet
+@media (max-width: 890px) {
+    body{
+        padding: 40px;
+        .profile{
+            gap: 20px;
+            align-items: center;
+            .infos{
+                .title{
+                    h1{
+                        font-size: 80px;
+                    }
+                }
+                ul{
+                    gap: 20px;
+                    li{
+                        a{
+                            font-size: 19px;
+                        }
+                    }
+                }
+            }
+            .image{
+                img{
+                    height: 400px;
+                }
+            }
+        }
+        .tecnologies{
+            .slider{
+                .img{
+                    img{
+                        width: 50px;
+                    }
+                }
+            }
+        }
+        .projects{
+            .items{
+                display: flex;
+                flex-direction: column;
+                .project{
+                    img{
+                        width: 70vw;
+                    }
+                }
+            }
+        }
+        .certificates{
+            .certificate{
+                ul{
+                    grid-template-columns: 1fr 1fr 1fr;
+                    li{
+                        img{
+                            width: 25vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    body{
+        .profile{
+            .infos{
+                .title{
+                    h1{
+                        font-size: 70px;
+                    }
+                }
+            }
+            .image{
+                img{
+                    height: 350px;
+                }
+            }
+        }
+    }
+}
+
+// Responsividade para Mobile
 @media (max-width: 440px) {
     body{
         padding: 20px;
@@ -98,7 +181,7 @@
                     justify-content: center;
                     li{
                         img{
-                            width: 34vw;
+                            width: 38vw;
                         }
                     }
                 }
@@ -106,3 +189,4 @@
         }
     }
 }
+
