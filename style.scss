@@ -18,5 +18,10 @@
     list-style: none;
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
 @import "styles/mainpage";
 @import "styles/responsividade";
