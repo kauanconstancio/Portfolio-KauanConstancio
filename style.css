@@ -221,6 +221,7 @@ body .experience .title {
   body .profile .infos .text {
     order: 3;
     text-align: center;
+    font-size: 18px;
   }
   body .profile .infos ul {
     display: flex;
@@ -228,16 +229,25 @@ body .experience .title {
     align-items: center;
     gap: 10px;
   }
+  body .profile .infos ul li a {
+    font-size: 18px;
+  }
   body .profile .image {
     display: none;
   }
   body .tecnologies {
     margin: 40px 0 0 0;
   }
+  body .tecnologies h2 {
+    font-size: 24px;
+  }
   body .tecnologies .slider .img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  body .projects .title h2 {
+    font-size: 24px;
   }
   body .projects .items {
     display: flex;
@@ -245,5 +255,26 @@ body .experience .title {
   }
   body .projects .items .project img {
     width: 80vw;
+  }
+  body .projects .items .project .description h2 {
+    font-size: 18px;
+  }
+  body .projects .items .project .description .links a {
+    font-size: 18px;
+  }
+  body .certificates .title h2 {
+    font-size: 24px;
+  }
+  body .certificates .filter ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body .certificates .certificate ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  body .certificates .certificate ul li img {
+    width: 37vw;
   }
 }/*# sourceMappingURL=style.css.map */
