@@ -208,12 +208,16 @@ body .certificates .certificate ul .show {
   flex-direction: column;
   gap: 10px;
 }
-body .experience .title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 100px 0 100px 0;
-  font-size: var(--text-font);
+body .footer {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  text-align: center;
+  width: 100%;
+  margin-top: 100px;
+}
+body .footer p {
+  margin: 0;
+  font-size: 14px;
 }
 
 @media (max-width: 890px) {
@@ -236,8 +240,12 @@ body .experience .title {
   body .profile .image img {
     height: 400px;
   }
+  body .tecnologies .slider .img {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   body .tecnologies .slider .img img {
-    width: 50px;
+    width: 60px;
   }
   body .projects .items {
     display: flex;
@@ -259,6 +267,13 @@ body .experience .title {
   }
   body .profile .image img {
     height: 350px;
+  }
+  body .tecnologies .slider .img {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  body .tecnologies .slider .img img {
+    width: 60px;
   }
 }
 @media (max-width: 440px) {

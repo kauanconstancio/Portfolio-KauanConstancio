@@ -199,13 +199,15 @@ body{
             }
         }
     }
-    .experience{
-        .title{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 100px 0 100px 0;
-            font-size: var(--text-font);
+    .footer {
+        background-color: var(--background-color);
+        color: var(--primary-color);
+        text-align: center;
+        width: 100%;
+        margin-top: 100px;
+        p {
+            margin: 0;
+            font-size: 14px;
         }
     }
 }
