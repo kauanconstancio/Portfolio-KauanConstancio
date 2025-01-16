@@ -38,62 +38,37 @@ body .header .links {
 }
 body .profile {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   gap: 80px;
-  margin: 50px 0 0 0;
+  margin: 80px 0 0 0;
 }
 body .profile .infos {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 50px;
 }
 body .profile .infos h2 {
   font-size: var(--text-font);
 }
 body .profile .infos h1 {
-  font-size: 140px;
+  font-size: 110px;
   line-height: 105%;
 }
 body .profile .infos ul {
   display: flex;
   gap: 40px;
-  margin: 50px 0 0 0;
 }
 body .profile .infos ul li a {
   font-weight: 600;
-  font-size: 22px;
+  font-size: var(--text-font);
   border-bottom: 1px solid #D3D3D3;
 }
+body .profile .infos .text {
+  font-size: 21px;
+}
 body .profile .image img {
-  height: 86vh;
+  height: 66vh;
   border-radius: 40px;
-}
-body .about-me {
-  display: flex;
-  flex-direction: column;
-  margin: 100px 0 0 0;
-}
-body .about-me .titulo {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-body .about-me .titulo h2 {
-  font-size: var(--title-font);
-  width: 240px;
-}
-body .about-me .titulo .line {
-  border: 1px solid #D3D3D3;
-  width: 100%;
-  height: 1px;
-}
-body .about-me .text {
-  width: 70%;
-  margin: 20px 0 0 18%;
-}
-body .about-me .text p {
-  font-size: var(--text-font);
 }
 body .tecnologies {
   margin: 180px 0 0 0;
@@ -105,25 +80,13 @@ body .tecnologies {
 body .tecnologies h2 {
   font-size: var(--title-font);
 }
-body .tecnologies ul {
+body .tecnologies .slider .img {
   display: flex;
+  align-items: center;
   gap: 200px;
-  align-items: center;
-  justify-content: space-between;
 }
-body .tecnologies ul li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 10px;
-}
-body .tecnologies ul li img {
+body .tecnologies .slider .img img {
   width: 100px;
-  height: 100px;
-}
-body .tecnologies ul li p {
-  font-weight: 600;
 }
 body .projects {
   margin: 80px 0 0 0;
@@ -148,7 +111,7 @@ body .projects .items .project {
   padding: 10px;
 }
 body .projects .items .project img {
-  width: 300px;
+  width: 80vh;
   border-radius: 10px;
 }
 body .projects .items .project .description {
@@ -203,13 +166,14 @@ body .certificates .filter ul li .bradesco {
   border: 2px solid #DC1432;
 }
 body .certificates .certificate ul {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
   gap: 60px;
 }
 body .certificates .certificate ul li a {
   border-bottom: 1px solid var(--primary-color);
-  width: 40%;
+  width: 31%;
 }
 body .certificates .certificate ul li img {
   width: 300px;
@@ -219,7 +183,6 @@ body .certificates .certificate ul .item {
   display: none;
 }
 body .certificates .certificate ul .show {
-  display: block;
   display: flex;
   flex-direction: column;
   gap: 10px;
