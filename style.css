@@ -193,4 +193,29 @@ body .experience .title {
   justify-content: center;
   margin: 100px 0 100px 0;
   font-size: var(--text-font);
+}
+
+@media (max-width: 415px) {
+  body {
+    padding: 20px;
+    width: 100%;
+  }
+  body .header {
+    display: none;
+  }
+  body .profile .infos .title h1 {
+    font-size: 28px;
+  }
+  body .profile .infos .text {
+    font-size: 18px;
+  }
+  body .profile .infos ul {
+    gap: 10px;
+  }
+  body .profile .infos ul li a {
+    font-size: 12px;
+  }
+  body .profile .image img {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
