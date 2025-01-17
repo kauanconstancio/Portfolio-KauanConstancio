@@ -1,3 +1,20 @@
+@media (max-width: 2700px){
+    body{
+        .certificates{
+            .certificate{
+                ul{
+                    li{
+                        img{
+                            width: 19vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 // Responsividade para Tablet
 @media (max-width: 890px) {
     body{

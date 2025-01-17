@@ -187,9 +187,8 @@ body .certificates .filter ul li .all:focus {
   box-shadow: 0 5px 6px rgba(255, 255, 255, 0.5);
 }
 body .certificates .certificate ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
   gap: 60px;
 }
 body .certificates .certificate ul li a {
@@ -220,6 +219,11 @@ body .footer p {
   font-size: 14px;
 }
 
+@media (max-width: 2700px) {
+  body .certificates .certificate ul li img {
+    width: 19vw;
+  }
+}
 @media (max-width: 890px) {
   body {
     padding: 40px;
