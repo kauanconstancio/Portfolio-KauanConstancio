@@ -219,9 +219,9 @@ body .footer p {
   font-size: 14px;
 }
 
-@media (max-width: 2700px) {
+@media (max-width: 1600px) {
   body .certificates .certificate ul li img {
-    width: 19vw;
+    width: 14.5vw;
   }
 }
 @media (max-width: 890px) {
@@ -280,7 +280,7 @@ body .footer p {
     width: 60px;
   }
 }
-@media (max-width: 440px) {
+@media (max-width: 470px) {
   body {
     padding: 20px;
   }
