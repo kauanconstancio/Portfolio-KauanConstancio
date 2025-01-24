@@ -107,6 +107,7 @@ body .projects .project-title {
 body .projects .items {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 40px;
 }
 body .projects .items .project {
@@ -253,10 +254,10 @@ body .footer p {
   }
   body .projects .items {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
   }
   body .projects .items .project img {
-    width: 70vw;
+    width: 39vw;
   }
   body .certificates .certificate ul {
     grid-template-columns: 1fr 1fr 1fr;
@@ -358,6 +359,10 @@ body .footer p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  body .certificates .certificate ul li {
+    display: flex;
+    flex-direction: column;
   }
   body .certificates .certificate ul li img {
     width: 35vw;

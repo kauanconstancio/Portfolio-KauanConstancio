@@ -57,10 +57,10 @@
         .projects{
             .items{
                 display: flex;
-                flex-direction: column;
+                flex-wrap: wrap;
                 .project{
                     img{
-                        width: 70vw;
+                        width: 39vw;
                     }
                 }
             }
@@ -210,6 +210,8 @@
                     flex-wrap: wrap;
                     justify-content: center;
                     li{
+                        display: flex;
+                        flex-direction: column;
                         img{
                             width: 35vw;
                         }
