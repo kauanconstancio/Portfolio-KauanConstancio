@@ -1,7 +1,7 @@
 let dadosProjetos = [
     {
         image: "assets/projects-img/Captura de tela 2025-01-24 201255.png",
-        title: "Calculadora de medias",
+        title: "Calculadora de médias",
         linkProjeto: "https://calculador-de-medias-zeta.vercel.app/",
         linkGithub: "https://github.com/kauanconstancio/calculador-de-medias"
     },
