@@ -175,17 +175,17 @@ body{
         }
         .certificate{
             ul{
-                display: flex;
-                flex-wrap: wrap;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
                 gap: 60px;
                 li{
-                    a{
-                        border-bottom: 1px solid var(--primary-color);
-                        width: 120px;
-                    }
                     img{
                         width: 300px;
                         border-radius: 10px;
+                    }
+                    a{
+                        border-bottom: 1px solid var(--primary-color);
+                        width: 120px;
                     }
                 }
                 .item{
