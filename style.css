@@ -116,7 +116,7 @@ body .projects .items .project {
   padding: 10px;
 }
 body .projects .items .project img {
-  width: 80vh;
+  width: 20vw;
   border-radius: 10px;
 }
 body .projects .items .project .description {
@@ -191,13 +191,13 @@ body .certificates .certificate ul {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 60px;
 }
-body .certificates .certificate ul li a {
-  border-bottom: 1px solid var(--primary-color);
-  width: 120px;
-}
 body .certificates .certificate ul li img {
   width: 300px;
   border-radius: 10px;
+}
+body .certificates .certificate ul li a {
+  border-bottom: 1px solid var(--primary-color);
+  width: 120px;
 }
 body .certificates .certificate ul .item {
   display: none;
