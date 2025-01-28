@@ -17,4 +17,10 @@ let dadosProjetos = [
         linkProjeto: "https://imerss-o-dev-alura-google-gemini.vercel.app/",
         linkGithub: "https://github.com/kauanconstancio/Imersao-DEV-Alura-Google-Gemini"
     },
+    {
+        image: "assets/projects-img/image.png",
+        title: "Cards de Precificão com JS",
+        linkProjeto: "https://cards-de-precifica-o-com-altern-ncia.vercel.app/",
+        linkGithub: "https://github.com/kauanconstancio/cards-de-precifica--o-com-altern-ncia"
+    },
 ]
