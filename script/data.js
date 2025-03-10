@@ -42,7 +42,7 @@ let dados = [
     {
         image: "assets/certificados/Captura de tela 2025-01-12 203355.png",
         link: "assets/certificados/Captura de tela 2025-01-12 203355.png",
-        class: ".rocketseat .item"
+        class: ".alura .item"
     },
     {
         image: "assets/certificados/Captura de tela 2025-01-12 203442.png",
@@ -65,8 +65,13 @@ let dados = [
         class: ".alura .item"
     },
     {
-        image: "assets/certificados/Captura de tela 2025-01-12 203204.png",
+        image: "assets/certificados/Captura de tela 2025-01-12 203428.png" ,
         link: "assets/certificados/Captura de tela 2025-01-12 203428.png",
         class: ".rocketseat .item"
+    },
+    {
+        image: "assets/certificados/Captura de tela 2025-03-09 202931.png",
+        link: "assets/certificados/Captura de tela 2025-03-09 202931.png",
+        class: ".alura .item"
     }
 ];
