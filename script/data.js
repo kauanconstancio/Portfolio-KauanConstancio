@@ -37,7 +37,7 @@ let dados = [
     {
         image: "assets/certificados/Captura de tela 2025-01-12 203339.png",
         link: "assets/certificados/Captura de tela 2025-01-12 203339.png",
-        class: ".formations .item"
+        class: ". alura .formations .item"
     },
     {
         image: "assets/certificados/Captura de tela 2025-01-12 203355.png",
@@ -73,5 +73,15 @@ let dados = [
         image: "assets/certificados/Captura de tela 2025-03-09 202931.png",
         link: "assets/certificados/Captura de tela 2025-03-09 202931.png",
         class: ".alura .item"
-    }
+    },
+    {
+        image: "assets/certificados/Captura de tela 2025-03-12 174623.png",
+        link: "assets/certificados/Captura de tela 2025-03-12 174623.png",
+        class: ".alura .item"
+    },
+    {
+        image: "assets/certificados/Captura de tela 2025-03-12 175451.png",
+        link: "assets/certificados/Captura de tela 2025-03-12 175451.png",
+        class: ".alura .formations .item"
+    },
 ];
