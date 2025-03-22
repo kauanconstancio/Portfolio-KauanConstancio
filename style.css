@@ -1,11 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-:root {
-  --primary-color: #D3D3D3;
-  --background-color: #0F111A;
-  --title-font: 36px;
-  --text-font: 22px;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -20,6 +13,18 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
+}
+
+:root {
+  --dark-green: #059212;
+  --neon-green: #00FF9D;
+  --primary-color: #D3D3D3;
+  --background-color: #0F111A;
+  --background-card-color: #1E1E1E;
+  --background-card-color-hover: #212121;
+  --white: #fff;
+  --title-font: 36px;
+  --text-font: 22px;
 }
 
 body {
@@ -40,6 +45,12 @@ body .header .links {
   display: flex;
   gap: 30px;
   font-weight: 600;
+}
+body .header .links a {
+  transition: all 0.2s ease-in-out;
+}
+body .header .links a:hover {
+  color: var(--neon-green);
 }
 body .profile {
   display: flex;
@@ -67,31 +78,89 @@ body .profile .infos ul li a {
   font-weight: 600;
   font-size: var(--text-font);
   border-bottom: 1px solid #D3D3D3;
+  transition: all 0.2s ease-in-out;
+}
+body .profile .infos ul li a:hover {
+  color: var(--neon-green);
 }
 body .profile .infos .text {
   font-size: 21px;
 }
 body .profile .image img {
-  height: 66vh;
-  border-radius: 40px;
+  width: 400px;
+  height: 400px;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+  border: 4px solid var(--primary-color);
+  border-radius: 50%;
 }
 body .tecnologies {
   margin: 180px 0 0 0;
   display: flex;
-  align-items: center;
   flex-direction: column;
   gap: 80px;
 }
 body .tecnologies h2 {
   font-size: var(--title-font);
 }
-body .tecnologies .slider .img {
+body .tecnologies .tecnologies-title {
   display: flex;
-  align-items: center;
-  gap: 100px;
+  flex-direction: column;
+  gap: 10px;
 }
-body .tecnologies .slider .img img {
-  width: 80px;
+body .tecnologies .tecnologies-title h2 {
+  color: var(--neon-green);
+}
+body .tecnologies .tecnologies-title p {
+  font-size: 20px;
+}
+body .tecnologies .tecnologies-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 200px;
+}
+body .tecnologies .tecnologies-cards .card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-card-color);
+  gap: 20px;
+  padding: 25px 35px;
+  border-radius: 8px;
+  width: 320px;
+  transition: all 0.3s linear;
+}
+body .tecnologies .tecnologies-cards .card h3 {
+  color: var(--white);
+  background-color: transparent;
+}
+body .tecnologies .tecnologies-cards .card h3 span {
+  background-color: transparent;
+  color: var(--neon-green);
+}
+body .tecnologies .tecnologies-cards .card ul {
+  background-color: transparent;
+}
+body .tecnologies .tecnologies-cards .card ul li {
+  list-style: disc;
+  margin-left: 30px;
+}
+body .tecnologies .tecnologies-cards .card ul li p {
+  background-color: var(--background-card-color);
+  transition: all 0.3s linear;
+}
+body .tecnologies .tecnologies-cards .card ul li::marker {
+  color: var(--neon-green);
+  background-color: var(--neon-green);
+}
+body .tecnologies .tecnologies-cards .card:hover {
+  background-color: var(--background-card-color-hover);
+  transform: translateY(-10px);
+}
+body .tecnologies .tecnologies-cards .card:hover ul li p {
+  background-color: var(--background-card-color-hover);
 }
 body .projects {
   margin: 80px 0 0 0;
