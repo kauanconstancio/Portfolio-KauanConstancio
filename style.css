@@ -479,6 +479,63 @@ body {
   gap: 10px;
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 120px;
+}
+.contact .title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact .title h2 {
+  font-size: var(--title-font);
+  color: var(--neon-green);
+}
+.contact .title p {
+  font-size: 20px;
+}
+.contact ul {
+  display: flex;
+  gap: 70px;
+}
+.contact ul li {
+  display: flex;
+  gap: 15px;
+}
+.contact ul li i {
+  font-size: 30px;
+  color: var(--neon-green);
+}
+.contact ul li .contact-infos {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact ul li .contact-infos h2 {
+  font-size: 20px;
+}
+.contact ul li .contact-infos .social {
+  display: flex;
+  gap: 10px;
+}
+.contact ul li .contact-infos .social a {
+  padding: 5px;
+  transition: all 0.1s linear;
+  border-radius: 50%;
+}
+.contact ul li .contact-infos .social a i {
+  color: var(--primary-color);
+}
+.contact ul li .contact-infos .social a:hover {
+  background-color: var(--neon-green);
+}
+.contact ul li .contact-infos .social a:hover i {
+  color: var(--background-color);
+}
+
 .footer {
   background-color: var(--background-color);
   color: var(--primary-color);
@@ -592,16 +649,26 @@ body {
   body .profile .image {
     display: none;
   }
+  body .skills .skills-infos {
+    display: flex;
+    flex-direction: column;
+  }
+  body .skills .skills-infos .skills-formations .skills-formations-card .skills-formations-title h2 {
+    font-size: 16px;
+    width: 70%;
+  }
   body .tecnologies {
     margin: 40px 0 0 0;
   }
   body .tecnologies h2 {
     font-size: 24px;
   }
-  body .tecnologies .slider .img {
+  body .tecnologies .tecnologies-cards {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+  }
+  body .tecnologies .tecnologies-cards .card {
+    width: 100%;
   }
   body .projects .title h2 {
     font-size: 24px;
@@ -627,15 +694,18 @@ body {
     flex-wrap: wrap;
   }
   body .certificates .certificate ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   body .certificates .certificate ul li {
     display: flex;
     flex-direction: column;
   }
   body .certificates .certificate ul li img {
-    width: 35vw;
+    width: 100%;
+  }
+  body .contact ul {
+    display: flex;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */
