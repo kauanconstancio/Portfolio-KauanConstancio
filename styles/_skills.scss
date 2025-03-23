@@ -36,32 +36,32 @@
                 border-radius: 12px;
                 transition: all 0.1s linear;
                 background-color: var(--background-card-color);
+                
 
-                .skills-formations-title {
+                h2{
+                    font-size: 18px;
+                }
+
+                .institution-progress{
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    background-color: var(--background-card-color);
-
-                    p {
+                    color: var(--neon-green);
+                    .progress {
                         color: var(--neon-green);
                         background-color: var(--dark-green);
                         padding: 8px 12px;
                         border-radius: 50px;
                         font-size: 10px;
                     }
-
-                    h2{
-                        font-size: 18px;
+                    p{
+                        color: var(--neon-green);
                     }
-                }
-
-                .institution {
-                    color: var(--neon-green);
                 }
                 p{
                     line-height: 145%;
                 }
+                
             }
 
             .skills-formations-card:hover {

@@ -186,23 +186,23 @@ body {
   transition: all 0.1s linear;
   background-color: var(--background-card-color);
 }
-.skills .skills-infos .skills-formations .skills-formations-card .skills-formations-title {
+.skills .skills-infos .skills-formations .skills-formations-card h2 {
+  font-size: 18px;
+}
+.skills .skills-infos .skills-formations .skills-formations-card .institution-progress {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--background-card-color);
+  color: var(--neon-green);
 }
-.skills .skills-infos .skills-formations .skills-formations-card .skills-formations-title p {
+.skills .skills-infos .skills-formations .skills-formations-card .institution-progress .progress {
   color: var(--neon-green);
   background-color: var(--dark-green);
   padding: 8px 12px;
   border-radius: 50px;
   font-size: 10px;
 }
-.skills .skills-infos .skills-formations .skills-formations-card .skills-formations-title h2 {
-  font-size: 18px;
-}
-.skills .skills-infos .skills-formations .skills-formations-card .institution {
+.skills .skills-infos .skills-formations .skills-formations-card .institution-progress p {
   color: var(--neon-green);
 }
 .skills .skills-infos .skills-formations .skills-formations-card p {
