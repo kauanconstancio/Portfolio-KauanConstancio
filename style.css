@@ -156,18 +156,23 @@ body .skills .skills-title {
   color: var(--neon-green);
   font-size: var(--title-font);
 }
-body .skills .skills-formations {
+body .skills .skills-infos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+body .skills .skills-infos .skills-formations {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
-body .skills .skills-formations h2 {
+body .skills .skills-infos .skills-formations h2 {
   font-size: 24px;
 }
-body .skills .skills-formations h2 span {
+body .skills .skills-infos .skills-formations h2 span {
   color: var(--neon-green);
 }
-body .skills .skills-formations .skills-formations-card {
+body .skills .skills-infos .skills-formations .skills-formations-card {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -177,30 +182,76 @@ body .skills .skills-formations .skills-formations-card {
   transition: all 0.1s linear;
   background-color: var(--background-card-color);
 }
-body .skills .skills-formations .skills-formations-card .skills-formations-title {
+body .skills .skills-infos .skills-formations .skills-formations-card .skills-formations-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: var(--background-card-color);
 }
-body .skills .skills-formations .skills-formations-card .skills-formations-title p {
+body .skills .skills-infos .skills-formations .skills-formations-card .skills-formations-title p {
   color: var(--neon-green);
   background-color: var(--dark-green);
   padding: 8px 12px;
   border-radius: 50px;
+  font-size: 10px;
 }
-body .skills .skills-formations .skills-formations-card h2 {
-  background-color: var(--background-card-color);
+body .skills .skills-infos .skills-formations .skills-formations-card .skills-formations-title h2 {
+  font-size: 18px;
 }
-body .skills .skills-formations .skills-formations-card p {
-  background-color: var(--background-card-color);
-}
-body .skills .skills-formations .skills-formations-card .institution {
+body .skills .skills-infos .skills-formations .skills-formations-card .institution {
   color: var(--neon-green);
 }
-body .skills .skills-formations .skills-formations-card:hover {
+body .skills .skills-infos .skills-formations .skills-formations-card p {
+  line-height: 145%;
+}
+body .skills .skills-infos .skills-formations .skills-formations-card:hover {
   border: 1px solid var(--neon-green);
   transform: translateY(-10px);
+}
+body .skills .skills-infos .skills-experiences {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+body .skills .skills-infos .skills-experiences h2 {
+  font-size: 24px;
+}
+body .skills .skills-infos .skills-experiences h2 span {
+  color: var(--neon-green);
+}
+body .skills .skills-infos .skills-experiences .skills-experiences-card {
+  display: flex;
+  gap: 20px;
+}
+body .skills .skills-infos .skills-experiences .skills-experiences-card .division-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .skills .skills-infos .skills-experiences .skills-experiences-card .division-line .ball {
+  width: 15px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--neon-green);
+}
+body .skills .skills-infos .skills-experiences .skills-experiences-card .division-line .line {
+  width: 1px;
+  height: 100%;
+  background-color: var(--neon-green);
+}
+body .skills .skills-infos .skills-experiences .skills-experiences-card .skills-experiences-card-infos {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+body .skills .skills-infos .skills-experiences .skills-experiences-card .skills-experiences-card-infos h2 {
+  font-size: 18px;
+}
+body .skills .skills-infos .skills-experiences .skills-experiences-card .skills-experiences-card-infos .institution {
+  color: var(--neon-green);
+}
+body .skills .skills-infos .skills-experiences .skills-experiences-card .skills-experiences-card-infos p {
+  line-height: 145%;
 }
 body .tecnologies {
   margin: 180px 0 0 0;
