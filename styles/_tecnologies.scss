@@ -1,0 +1,72 @@
+.tecnologies {
+    margin: 180px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+    h2 {
+        font-size: var(--title-font);
+    }
+
+    .tecnologies-title {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h2 {
+            color: var(--neon-green);
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .tecnologies-cards {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--background-card-color);
+            gap: 20px;
+            padding: 25px 35px;
+            border-radius: 8px;
+            width: 25vw;
+            transition: all 0.1s linear;
+
+            h3 {
+                color: var(--white);
+                background-color: transparent;
+
+                span {
+                    background-color: transparent;
+                    color: var(--neon-green);
+                }
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                li {
+                    list-style: disc;
+                    margin-left: 30px;
+                }
+
+                li::marker {
+                    color: var(--neon-green);
+                    background-color: var(--neon-green);
+                }
+            }
+        }
+
+        .card:hover {
+            background-color: var(--background-card-color-hover);
+            transform: translateY(-10px);
+        }
+    }
+}

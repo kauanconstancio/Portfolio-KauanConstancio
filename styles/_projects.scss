@@ -1,0 +1,87 @@
+.projects {
+    margin: 160px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .project-title {
+            color: var(--neon-green);
+            font-size: var(--title-font);
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+
+        .project {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 0 0 20px 0;
+            background-color: var(--background-card-color);
+            border-radius: 10px;
+            transition: all 0.1s linear;
+
+            img {
+                height: 200px;
+                object-fit: cover;
+                width: 100%;
+                border-radius: 10px 10px 0 0;
+            }
+
+            .description {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding: 20px;
+                background-color: var(--background-card-color);
+
+                h2 {
+                    font-size: 18px;
+                    color: var(--white);
+                    background-color: var(--background-card-color);
+                }
+
+                p {
+                    background-color: var(--background-card-color);
+                }
+
+                .links {
+                    display: flex;
+                    gap: 10px;
+                    background-color: var(--background-card-color);
+
+                    a {
+                        font-size: 16px;
+                        transition: all 0.1s linear;
+                    }
+
+                    a:hover {
+                        color: var(--neon-green);
+                    }
+                }
+            }
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+            -webkit-box-shadow: 1px 16px 42px 6px rgba(90, 184, 146, 1);
+            -moz-box-shadow: 1px 16px 42px 6px rgba(90, 184, 146, 1);
+            box-shadow: 1px 16px 42px 6px rgba(90, 184, 146, 1);
+
+        }
+    }
+}

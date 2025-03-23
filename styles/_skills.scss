@@ -1,0 +1,119 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 180px 0 0 0;
+
+    .skills-title {
+        color: var(--neon-green);
+        font-size: var(--title-font);
+    }
+
+    .skills-infos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+
+        .skills-formations {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            h2 {
+                font-size: 24px;
+
+                span {
+                    color: var(--neon-green);
+                }
+            }
+
+            .skills-formations-card {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+                border: 1px solid #36393b;
+                border-radius: 12px;
+                transition: all 0.1s linear;
+                background-color: var(--background-card-color);
+
+                .skills-formations-title {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    background-color: var(--background-card-color);
+
+                    p {
+                        color: var(--neon-green);
+                        background-color: var(--dark-green);
+                        padding: 8px 12px;
+                        border-radius: 50px;
+                        font-size: 10px;
+                    }
+
+                    h2{
+                        font-size: 18px;
+                    }
+                }
+
+                .institution {
+                    color: var(--neon-green);
+                }
+                p{
+                    line-height: 145%;
+                }
+            }
+
+            .skills-formations-card:hover {
+                border: 1px solid var(--neon-green);
+                transform: translateY(-10px);
+            }
+        }
+        .skills-experiences{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            h2 {
+                font-size: 24px;
+
+                span {
+                    color: var(--neon-green);
+                }
+            }
+            .skills-experiences-card{
+                display: flex;
+                gap: 20px;
+                .division-line{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .ball{
+                        width: 15px;
+                        height: 16px;
+                        border-radius: 50%;
+                        background-color: var(--neon-green);
+                    }
+                    .line{
+                        width: 1px;
+                        height: 100%;
+                        background-color: var(--neon-green);
+                    }
+                }
+                .skills-experiences-card-infos{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    h2{
+                        font-size: 18px;
+                    }
+                    .institution{
+                        color: var(--neon-green);
+                    }
+                    p{
+                        line-height: 145%;
+                    }
+                }
+            }
+        }
+    }
+}
