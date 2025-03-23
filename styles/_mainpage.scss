@@ -69,6 +69,61 @@ body{
             }
         }
     }
+    .skills{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 180px 0 0 0;
+        .skills-title{
+            color: var(--neon-green);
+            font-size: var(--title-font);
+        }
+        .skills-formations{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            h2{
+                span{
+                    color: var(--neon-green);
+                }
+            }
+            .skills-formations-card{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                padding: 20px;
+                border: 1px solid #36393b;
+                border-radius: 12px;
+                transition: all 0.1s linear;
+                background-color: var(--background-card-color);
+                .skills-formations-title{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    background-color: var(--background-card-color);
+                    p{
+                        color: var(--neon-green);
+                        background-color: var(--dark-green);
+                        padding: 8px 12px;
+                        border-radius: 50px;
+                    }
+                }
+                h2{
+                    background-color: var(--background-card-color);
+                }
+                p{
+                    background-color: var(--background-card-color);
+                }
+                .institution{
+                    color: var(--neon-green);
+                }
+            }
+            .skills-formations-card:hover{
+                border: 1px solid var(--neon-green);
+                transform: translateY(-10px);
+            }
+        }
+    }
     .tecnologies{
         margin: 180px 0 0 0;
         display: flex;
@@ -194,14 +249,17 @@ body{
                         gap: 20px;
                         background-color: var(--background-card-color);
                         a{
-                            border-bottom: 1px solid var(--primary-color);
-                            font-size: 16px;
-                            background-color: var(--background-card-color);
-                            transition: all 0.3s linear;
+                            display: flex;
+                            gap: 20px;
                         }
-                        a:hover{
-                            color: var(--neon-green);
-                        }
+                        // a{
+                        //     font-size: 26px;
+                        //     background-color: #fff;
+                        //     transition: all 0.3s linear;
+                        // }
+                        // a:hover{
+                        //     color: var(--neon-green);
+                        // }
                     }
                 }
             }
@@ -217,17 +275,20 @@ body{
     .certificates{
         .title{
             display: flex;
-            align-items: center;
-            justify-content: center;
+            flex-direction: column;
             margin: 100px 0 100px 0;
             font-size: var(--text-font);
+            h2{
+                color: var(--neon-green);
+            }
+            p{
+                font-size: 20px;
+            }
         }
         .filter{
             margin: 0 0 100px 0;
             ul{
                 display: flex;
-                align-items: center;
-                justify-content: center;
                 gap: 20px;
                 li{
                     button{
@@ -277,13 +338,17 @@ body{
                 li{
                     display: flex;
                     flex-direction: column;
+                    gap: 10px;
                     img{
                         width: 300px;
                         border-radius: 10px;
                     }
                     a{
-                        border-bottom: 1px solid var(--primary-color);
                         width: 120px;
+                        transition: all 0.3s linear;
+                    }
+                    a:hover{
+                        color: var(--neon-green);
                     }
                 }
                 .item{
