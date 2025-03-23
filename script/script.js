@@ -6,7 +6,7 @@ for (let projeto of dadosProjetos) {
         <img src="${projeto.image}">
         <div class="description">
             <h2>${projeto.title}</h2>
-            <p>${projeto.description}</
+            <p>${projeto.description}</p>
             <div class="links">
                 <a href="${projeto.linkProjeto}" target="_blank">Ver Projeto</a>
                 <a href="${projeto.linkGithub}" target="_blank">GitHub</a>

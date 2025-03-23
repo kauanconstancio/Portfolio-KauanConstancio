@@ -1,5 +1,6 @@
 body{
     padding: 20px 200px;
+    background-color: var(--background-color);
     .header{
         display: flex;
         align-items: center;
@@ -15,7 +16,7 @@ body{
             gap: 30px;
             font-weight: 600;
             a{
-                transition: all 0.2s ease-in-out;
+                transition: all 0.1s ease-in-out;
             }
             a:hover{
                 color: var(--neon-green);
@@ -46,7 +47,7 @@ body{
                         font-weight: 600;
                         font-size: var(--text-font);
                         border-bottom: 1px solid #D3D3D3;
-                        transition: all 0.2s ease-in-out;
+                        transition: all 0.1s ease-in-out;
                     }
                     a:hover{
                         color: var(--neon-green);
@@ -55,6 +56,7 @@ body{
             }
             .text{
                 font-size: 21px;
+                line-height: 135%;
             }
         }
         .image{
@@ -83,6 +85,7 @@ body{
             flex-direction: column;
             gap: 40px;
             h2{
+                font-size: 24px;
                 span{
                     color: var(--neon-green);
                 }
@@ -90,7 +93,7 @@ body{
             .skills-formations-card{
                 display: flex;
                 flex-direction: column;
-                gap: 5px;
+                gap: 15px;
                 padding: 20px;
                 border: 1px solid #36393b;
                 border-radius: 12px;
@@ -156,7 +159,7 @@ body{
                 padding: 25px 35px;
                 border-radius: 8px;
                 width: 25vw;
-                transition: all 0.3s linear;
+                transition: all 0.1s linear;
                 h3{
                     color: var(--white);
                     background-color: transparent;
@@ -166,14 +169,12 @@ body{
                     }
                 }
                 ul{
-                    background-color: transparent;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
                     li{
                         list-style: disc;
                         margin-left: 30px;
-                        p{
-                            background-color: var(--background-card-color);
-                            transition: all 0.3s linear;
-                        }
                     }
                     li::marker{
                         color: var(--neon-green);
@@ -184,13 +185,6 @@ body{
             .card:hover{
                 background-color: var(--background-card-color-hover);
                 transform: translateY(-10px);
-                ul{
-                    li{
-                        p{
-                            background-color: var(--background-card-color-hover);
-                        }
-                    }
-                }
             }
         }
     }
@@ -202,6 +196,7 @@ body{
         .title{
             display: flex;
             flex-direction: column;
+            gap: 10px;
             .project-title{
                 color: var(--neon-green);
                 font-size: var(--title-font);
@@ -223,7 +218,7 @@ body{
                 padding: 0 0 20px 0;
                 background-color: var(--background-card-color);
                 border-radius: 10px;
-                transition: all 0.3s linear;
+                transition: all 0.1s linear;
                 img{
                     height: 200px;
                     object-fit: cover;
@@ -233,7 +228,7 @@ body{
                 .description{
                     display: flex;
                     flex-direction: column;
-                    gap: 5px;
+                    gap: 10px;
                     padding: 20px;
                     background-color: var(--background-card-color);
                     h2{
@@ -246,20 +241,15 @@ body{
                     }
                     .links{
                         display: flex;
-                        gap: 20px;
+                        gap: 10px;
                         background-color: var(--background-card-color);
                         a{
-                            display: flex;
-                            gap: 20px;
+                            font-size: 16px;
+                            transition: all 0.1s linear;
                         }
-                        // a{
-                        //     font-size: 26px;
-                        //     background-color: #fff;
-                        //     transition: all 0.3s linear;
-                        // }
-                        // a:hover{
-                        //     color: var(--neon-green);
-                        // }
+                        a:hover{
+                            color: var(--neon-green);
+                        }
                     }
                 }
             }
@@ -276,8 +266,9 @@ body{
         .title{
             display: flex;
             flex-direction: column;
+            gap: 10px;
             margin: 100px 0 100px 0;
-            font-size: var(--text-font);
+            font-size: var(--title-font);
             h2{
                 color: var(--neon-green);
             }
@@ -293,6 +284,7 @@ body{
                 li{
                     button{
                         border: 2px solid var(--primary-color);
+                        background-color: transparent;
                         border-radius: 10px;
                         padding: 10px;
                         font-size: 18px;

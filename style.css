@@ -5,14 +5,62 @@
   box-sizing: border-box;
   text-decoration: none;
   color: var(--primary-color);
-  background-color: var(--background-color);
-  font-family: "Poppins", sans-serif;
   list-style: none;
 }
 
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Poppins", sans-serif;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 :root {
@@ -29,6 +77,7 @@ html {
 
 body {
   padding: 20px 200px;
+  background-color: var(--background-color);
 }
 body .header {
   display: flex;
@@ -47,7 +96,7 @@ body .header .links {
   font-weight: 600;
 }
 body .header .links a {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 body .header .links a:hover {
   color: var(--neon-green);
@@ -78,13 +127,14 @@ body .profile .infos ul li a {
   font-weight: 600;
   font-size: var(--text-font);
   border-bottom: 1px solid #D3D3D3;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 body .profile .infos ul li a:hover {
   color: var(--neon-green);
 }
 body .profile .infos .text {
   font-size: 21px;
+  line-height: 135%;
 }
 body .profile .image img {
   width: 400px;
@@ -111,13 +161,16 @@ body .skills .skills-formations {
   flex-direction: column;
   gap: 40px;
 }
+body .skills .skills-formations h2 {
+  font-size: 24px;
+}
 body .skills .skills-formations h2 span {
   color: var(--neon-green);
 }
 body .skills .skills-formations .skills-formations-card {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 15px;
   padding: 20px;
   border: 1px solid #36393b;
   border-radius: 12px;
@@ -182,7 +235,7 @@ body .tecnologies .tecnologies-cards .card {
   padding: 25px 35px;
   border-radius: 8px;
   width: 25vw;
-  transition: all 0.3s linear;
+  transition: all 0.1s linear;
 }
 body .tecnologies .tecnologies-cards .card h3 {
   color: var(--white);
@@ -193,15 +246,13 @@ body .tecnologies .tecnologies-cards .card h3 span {
   color: var(--neon-green);
 }
 body .tecnologies .tecnologies-cards .card ul {
-  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 body .tecnologies .tecnologies-cards .card ul li {
   list-style: disc;
   margin-left: 30px;
-}
-body .tecnologies .tecnologies-cards .card ul li p {
-  background-color: var(--background-card-color);
-  transition: all 0.3s linear;
 }
 body .tecnologies .tecnologies-cards .card ul li::marker {
   color: var(--neon-green);
@@ -210,9 +261,6 @@ body .tecnologies .tecnologies-cards .card ul li::marker {
 body .tecnologies .tecnologies-cards .card:hover {
   background-color: var(--background-card-color-hover);
   transform: translateY(-10px);
-}
-body .tecnologies .tecnologies-cards .card:hover ul li p {
-  background-color: var(--background-card-color-hover);
 }
 body .projects {
   margin: 160px 0 0 0;
@@ -223,6 +271,7 @@ body .projects {
 body .projects .title {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 body .projects .title .project-title {
   color: var(--neon-green);
@@ -245,7 +294,7 @@ body .projects .items .project {
   padding: 0 0 20px 0;
   background-color: var(--background-card-color);
   border-radius: 10px;
-  transition: all 0.3s linear;
+  transition: all 0.1s linear;
 }
 body .projects .items .project img {
   height: 200px;
@@ -257,7 +306,7 @@ body .projects .items .project img {
 body .projects .items .project .description {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
   padding: 20px;
   background-color: var(--background-card-color);
 }
@@ -271,12 +320,15 @@ body .projects .items .project .description p {
 }
 body .projects .items .project .description .links {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   background-color: var(--background-card-color);
 }
 body .projects .items .project .description .links a {
-  display: flex;
-  gap: 20px;
+  font-size: 16px;
+  transition: all 0.1s linear;
+}
+body .projects .items .project .description .links a:hover {
+  color: var(--neon-green);
 }
 body .projects .items .project:hover {
   transform: translateY(-10px);
@@ -285,8 +337,9 @@ body .projects .items .project:hover {
 body .certificates .title {
   display: flex;
   flex-direction: column;
+  gap: 10px;
   margin: 100px 0 100px 0;
-  font-size: var(--text-font);
+  font-size: var(--title-font);
 }
 body .certificates .title h2 {
   color: var(--neon-green);
@@ -303,6 +356,7 @@ body .certificates .filter ul {
 }
 body .certificates .filter ul li button {
   border: 2px solid var(--primary-color);
+  background-color: transparent;
   border-radius: 10px;
   padding: 10px;
   font-size: 18px;
