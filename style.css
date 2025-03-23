@@ -614,40 +614,39 @@ body {
     padding: 20px;
   }
   body .header {
+    display: block;
+  }
+  body .header .links {
     display: none;
   }
   body .profile {
     margin: 40px 0 0 0;
-  }
-  body .profile .infos {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column-reverse;
   }
   body .profile .infos .title {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
   body .profile .infos .title h1 {
     font-size: 30px;
   }
   body .profile .infos .text {
     order: 3;
-    text-align: center;
     font-size: 18px;
   }
   body .profile .infos ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-  body .profile .infos ul li a {
-    font-size: 18px;
-  }
-  body .profile .image {
     display: none;
+  }
+  body .profile .image img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body .skills {
+    margin-top: -60px;
   }
   body .skills .skills-infos {
     display: flex;

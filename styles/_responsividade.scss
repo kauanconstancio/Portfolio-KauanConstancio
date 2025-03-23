@@ -115,44 +115,43 @@
     body{
         padding: 20px;
         .header{
-            display: none;
+            display: block;
+            .links{
+                display: none;
+            }
         }
         .profile{
             margin: 40px 0 0 0;
+            display: flex;
+            flex-direction: column-reverse;
             .infos{
-                display: flex;
-                align-items: center;
-                justify-content: center;
                 .title{
                     display: flex;
                     flex-direction: column;
-                    align-items: center;
                     h1{
                         font-size: 30px;
                     }
                 }
                 .text{
                     order: 3;
-                    text-align: center;
+                    // text-align: center;
                     font-size: 18px;
                 }
                 ul{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    gap: 10px;
-                    li{
-                        a{
-                            font-size: 18px;
-                        }
-                    }
+                    display: none;
                 }
             }
             .image{
-                display: none;
+                img{
+                    display: block;
+                    width: 200px;
+                    height: 200px;
+                    object-fit: cover;
+                }
             }
         }
         .skills{
+            margin-top: -60px;
             .skills-infos{
                 display: flex;
                 flex-direction: column;
