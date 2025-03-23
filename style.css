@@ -86,10 +86,11 @@ body {
   justify-content: space-between;
 }
 .header h2 {
+  font-size: 28px;
   font-weight: 600;
 }
 .header h2 span {
-  font-weight: 500;
+  font-weight: 400;
 }
 .header .links {
   display: flex;
@@ -128,10 +129,10 @@ body {
 .profile .infos ul li a {
   font-weight: 600;
   font-size: var(--text-font);
-  border-bottom: 1px solid #D3D3D3;
-  transition: all 0.1s ease-in-out;
+  transition: all 0.3s linear;
 }
 .profile .infos ul li a:hover {
+  border-bottom: 1px solid var(--neon-green);
   color: var(--neon-green);
 }
 .profile .infos .text {

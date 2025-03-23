@@ -26,11 +26,11 @@
                 a {
                     font-weight: 600;
                     font-size: var(--text-font);
-                    border-bottom: 1px solid #D3D3D3;
-                    transition: all 0.1s ease-in-out;
+                    transition: all 0.3s linear;
                 }
-
+                
                 a:hover {
+                    border-bottom: 1px solid var(--neon-green);
                     color: var(--neon-green);
                 }
             }
