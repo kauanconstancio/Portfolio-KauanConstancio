@@ -28,7 +28,7 @@ html {
 }
 
 body {
-  padding: 20px 80px;
+  padding: 20px 200px;
 }
 body .header {
   display: flex;
@@ -120,7 +120,6 @@ body .tecnologies .tecnologies-cards {
   display: flex;
   justify-content: center;
   gap: 30px;
-  padding: 0 200px;
 }
 body .tecnologies .tecnologies-cards .card {
   display: flex;
@@ -129,7 +128,7 @@ body .tecnologies .tecnologies-cards .card {
   gap: 20px;
   padding: 25px 35px;
   border-radius: 8px;
-  width: 320px;
+  width: 25vw;
   transition: all 0.3s linear;
 }
 body .tecnologies .tecnologies-cards .card h3 {
@@ -163,18 +162,25 @@ body .tecnologies .tecnologies-cards .card:hover ul li p {
   background-color: var(--background-card-color-hover);
 }
 body .projects {
-  margin: 80px 0 0 0;
+  margin: 160px 0 0 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  gap: 80px;
 }
-body .projects .project-title {
+body .projects .title {
+  display: flex;
+  flex-direction: column;
+}
+body .projects .title .project-title {
+  color: var(--neon-green);
   font-size: var(--title-font);
-  margin: 0 0 80px 0;
+}
+body .projects .title p {
+  font-size: 20px;
 }
 body .projects .items {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   justify-content: center;
   gap: 40px;
@@ -183,27 +189,50 @@ body .projects .items .project {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 10px;
+  padding: 0 0 20px 0;
+  background-color: var(--background-card-color);
+  border-radius: 10px;
+  transition: all 0.3s linear;
 }
 body .projects .items .project img {
-  width: 20vw;
-  border-radius: 10px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
 }
 body .projects .items .project .description {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  padding: 20px;
+  background-color: var(--background-card-color);
 }
 body .projects .items .project .description h2 {
-  font-size: var(--text-font);
+  font-size: 18px;
+  color: var(--white);
+  background-color: var(--background-card-color);
+}
+body .projects .items .project .description p {
+  background-color: var(--background-card-color);
 }
 body .projects .items .project .description .links {
   display: flex;
   gap: 20px;
+  background-color: var(--background-card-color);
 }
 body .projects .items .project .description .links a {
   border-bottom: 1px solid var(--primary-color);
-  font-size: 20px;
+  font-size: 16px;
+  background-color: var(--background-card-color);
+  transition: all 0.3s linear;
+}
+body .projects .items .project .description .links a:hover {
+  color: var(--neon-green);
+}
+body .projects .items .project:hover {
+  transform: translateY(-10px);
+  box-shadow: 1px 16px 42px 6px rgb(90, 184, 146);
 }
 body .certificates .title {
   display: flex;
@@ -258,8 +287,13 @@ body .certificates .filter ul li .all:focus {
 }
 body .certificates .certificate ul {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 60px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 60px;
+}
+body .certificates .certificate ul li {
+  display: flex;
+  flex-direction: column;
 }
 body .certificates .certificate ul li img {
   width: 300px;

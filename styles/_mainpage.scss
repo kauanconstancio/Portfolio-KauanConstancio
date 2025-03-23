@@ -1,5 +1,5 @@
 body{
-    padding: 20px 80px;
+    padding: 20px 200px;
     .header{
         display: flex;
         align-items: center;
@@ -93,7 +93,6 @@ body{
             display: flex;
             justify-content: center;
             gap: 30px;
-            padding: 0 200px;
             .card{
                 display: flex;
                 flex-direction: column;
@@ -101,7 +100,7 @@ body{
                 gap: 20px;
                 padding: 25px 35px;
                 border-radius: 8px;
-                width: 320px;
+                width: 25vw;
                 transition: all 0.3s linear;
                 h3{
                     color: var(--white);
@@ -141,17 +140,24 @@ body{
         }
     }
     .projects{
-        margin: 80px 0 0 0;
+        margin: 160px 0 0 0;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        .project-title{
-            font-size: var(--title-font);
-            margin: 0 0 80px 0;
+        gap: 80px;
+        .title{
+            display: flex;
+            flex-direction: column;
+            .project-title{
+                color: var(--neon-green);
+                font-size: var(--title-font);
+            }
+            p{
+                font-size: 20px;
+            }
         }
         .items{
-            display: flex;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
             align-items: center;
             justify-content: center;
             gap: 40px;
@@ -159,27 +165,52 @@ body{
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
-                padding: 10px;
+                padding: 0 0 20px 0;
+                background-color: var(--background-card-color);
+                border-radius: 10px;
+                transition: all 0.3s linear;
                 img{
-                    width: 20vw;
-                    border-radius: 10px;
+                    height: 200px;
+                    object-fit: cover;
+                    width: 100%;
+                    border-radius: 10px 10px 0 0;
                 }
                 .description{
                     display: flex;
                     flex-direction: column;
                     gap: 5px;
+                    padding: 20px;
+                    background-color: var(--background-card-color);
                     h2{
-                        font-size: var(--text-font);
+                        font-size: 18px;
+                        color: var(--white);
+                        background-color: var(--background-card-color);
+                    }
+                    p{
+                        background-color: var(--background-card-color);
                     }
                     .links{
                         display: flex;
                         gap: 20px;
+                        background-color: var(--background-card-color);
                         a{
                             border-bottom: 1px solid var(--primary-color);
-                            font-size: 20px;
+                            font-size: 16px;
+                            background-color: var(--background-card-color);
+                            transition: all 0.3s linear;
+                        }
+                        a:hover{
+                            color: var(--neon-green);
                         }
                     }
                 }
+            }
+            .project:hover{
+                transform: translateY(-10px);
+                -webkit-box-shadow: 1px 16px 42px 6px rgba(90,184,146,1);
+                -moz-box-shadow: 1px 16px 42px 6px rgba(90,184,146,1);
+                box-shadow: 1px 16px 42px 6px rgba(90,184,146,1);
+
             }
         }   
     }
@@ -240,9 +271,12 @@ body{
         .certificate{
             ul{
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-                gap: 60px;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-column-gap: 10px;
+                grid-row-gap: 60px;
                 li{
+                    display: flex;
+                    flex-direction: column;
                     img{
                         width: 300px;
                         border-radius: 10px;
