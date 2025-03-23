@@ -173,6 +173,7 @@
                 font-size: 24px;
             }
             .tecnologies-cards{
+                margin-top: -20px;
                 display: flex;
                 flex-direction: column;
                 .card{
@@ -181,17 +182,19 @@
             }
         }
         .projects{
+            margin-top: 30px;
             .title{
                 h2{
                     font-size: 24px;
                 }
             }
             .items{
+                margin-top: -10px;
             display: flex;
             flex-direction: column;
                 .project{
                     img{
-                        width: 80vw;
+                        width: 90vw;
                     }
                     .description{
                         h2{
@@ -208,12 +211,14 @@
 
         }
         .certificates{
+            margin-top: -10px;
             .title{
                 h2{
-                    font-size: 24px;
+                    font-size: var(--title-text);
                 }
             }
             .filter{
+                margin-top: -20px;
                 ul{
                     display: flex;
                     flex-wrap: wrap;
@@ -234,6 +239,7 @@
             }
         }
         .contact{
+            margin-top: 40px;
             ul{
                 display: flex;
                 flex-direction: column;

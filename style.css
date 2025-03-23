@@ -6,6 +6,7 @@
   text-decoration: none;
   color: var(--primary-color);
   list-style: none;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -30,7 +31,6 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font-family: "Poppins", sans-serif;
   vertical-align: baseline;
 }
 
@@ -663,21 +663,26 @@ body {
     font-size: 24px;
   }
   body .tecnologies .tecnologies-cards {
+    margin-top: -20px;
     display: flex;
     flex-direction: column;
   }
   body .tecnologies .tecnologies-cards .card {
     width: 100%;
   }
+  body .projects {
+    margin-top: 30px;
+  }
   body .projects .title h2 {
     font-size: 24px;
   }
   body .projects .items {
+    margin-top: -10px;
     display: flex;
     flex-direction: column;
   }
   body .projects .items .project img {
-    width: 80vw;
+    width: 90vw;
   }
   body .projects .items .project .description h2 {
     font-size: 18px;
@@ -685,8 +690,14 @@ body {
   body .projects .items .project .description .links a {
     font-size: 18px;
   }
+  body .certificates {
+    margin-top: -10px;
+  }
   body .certificates .title h2 {
-    font-size: 24px;
+    font-size: var(--title-text);
+  }
+  body .certificates .filter {
+    margin-top: -20px;
   }
   body .certificates .filter ul {
     display: flex;
@@ -702,6 +713,9 @@ body {
   }
   body .certificates .certificate ul li img {
     width: 100%;
+  }
+  body .contact {
+    margin-top: 40px;
   }
   body .contact ul {
     display: flex;
