@@ -20,18 +20,25 @@
 
         ul {
             display: flex;
-            gap: 40px;
+            gap: 20px;
 
             li {
-                a {
-                    font-weight: 600;
-                    font-size: var(--text-font);
-                    transition: all 0.3s linear;
+                a{
+                    display: flex;
+                    align-items: center;
+                    padding: 5px ;
+                    transition: all 0.2s linear;
+                    border-radius: 50%;
+                    font-size: 35px;
+                    i{
+                        color: var(--primary-color);
+                    }
                 }
-                
-                a:hover {
-                    border-bottom: 1px solid var(--neon-green);
-                    color: var(--neon-green);
+                a:hover{
+                    background-color: var(--neon-green);
+                    i{
+                        color: var(--background-color);
+                    }
                 }
             }
         }

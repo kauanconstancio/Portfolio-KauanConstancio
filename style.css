@@ -124,16 +124,24 @@ body {
 }
 .profile .infos ul {
   display: flex;
-  gap: 40px;
+  gap: 20px;
 }
 .profile .infos ul li a {
-  font-weight: 600;
-  font-size: var(--text-font);
-  transition: all 0.3s linear;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  transition: all 0.2s linear;
+  border-radius: 50%;
+  font-size: 35px;
+}
+.profile .infos ul li a i {
+  color: var(--primary-color);
 }
 .profile .infos ul li a:hover {
-  border-bottom: 1px solid var(--neon-green);
-  color: var(--neon-green);
+  background-color: var(--neon-green);
+}
+.profile .infos ul li a:hover i {
+  color: var(--background-color);
 }
 .profile .infos .text {
   font-size: 21px;
