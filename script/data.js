@@ -84,4 +84,9 @@ let dados = [
         link: "assets/certificados/Captura de tela 2025-03-12 175451.png",
         class: ".alura .formations .item"
     },
+    {
+        image: "assets/certificados/Captura de tela 2025-04-15 150525.png",
+        link: "assets/certificados/Captura de tela 2025-04-15 150525.png",
+        class: ".alura .formations .item"
+    },
 ];
