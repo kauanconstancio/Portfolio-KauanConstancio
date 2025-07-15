@@ -158,25 +158,11 @@ body .container .section .formations .add-formacao button {
     bottom: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 body .container .section .formations .formacao-adicionada{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 405px;
+    width: 425px;
     height: 352px;
     position: relative;
 }

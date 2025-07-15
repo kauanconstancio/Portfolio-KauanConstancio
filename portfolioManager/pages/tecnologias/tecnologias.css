@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #0F111A;
+    --background-color-green: #1D372D;
+    --color-green: #00FF9D;
+    --white: #fff;
+    --line-color: #191727;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+body .container {
+    max-width: 1000px;
+}
+
+body .container h1 {
+    font-size: 26px;
+    color: var(--white);
+    font-weight: 500;
+}
+
+body .container .sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 350px;
+    position: fixed;
+    left: 0;
+    height: 100dvh;
+    padding: 40px;
+    border-right: 1px solid var(--line-color);
+}
+
+body .container .sidebar .pages {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+body .container .sidebar .pages a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 16px;
+    transition: all 250ms;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+body .container .sidebar .pages #selected {
+    background-color: var(--background-color-green);
+}
+
+body .container .sidebar .pages a:hover {
+    background-color: var(--background-color-green);
+}
+
+body .container .section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px;
+    margin-left: 350px;
+}
+
+body .container .section h2 {
+    color: var(--white);
+    font-weight: 500;
+}
+
+body .container .section .tecnologias{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+body .container .section .tecnologias h3{
+    color: var(--color-green);
+    font-weight: 400;
+}
+
+body .container .section .tecnologias .ferramentas ul,
+.frameworks ul,
+.linguagens ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid var(--color-green);
+    border-radius: 16px;
+    padding: 24px;
+    width: 425px;
+}
+
+body .container .section .tecnologias .ferramentas,
+.frameworks,
+.linguagens {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+body .container .section .tecnologias .ferramentas li,
+.frameworks li,
+.linguagens li{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 20px;
+    border-radius: 16px;
+    list-style: none;
+    background-color: var(--background-color-green);
+    color: var(--white);
+}
+
+body .container .section .tecnologias .ferramentas .left,
+.frameworks .left,
+.linguagens .left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+body .container .section .tecnologias .ferramentas .left input,
+.frameworks .left input,
+.linguagens .left input{
+    background-color: transparent;
+    border: none;
+    color: var(--white);
+    font-size: 16px;
+    outline: none;
+}
+
+body .container .section .tecnologias .ferramentas li button,
+.frameworks li button,
+.linguagens li button{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+body .container .section .tecnologias .ferramentas li #add-tec,
+.frameworks li #add-tec,
+.linguagens li #add-tec{
+    color: var(--color-green);
+    font-size: 16px;
+}
+
+body .container .section .tecnologias .ferramentas li button img,
+.frameworks li button img,
+.linguagens li button img{
+    width: 25px;
+    align-items: center;
+}
+
+body .container .section .tecnologias .ferramentas img,
+.frameworks img,
+.linguagens img{
+    width: 10px;
+}
