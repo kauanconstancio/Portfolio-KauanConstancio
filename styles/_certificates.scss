@@ -34,39 +34,44 @@
                 }
 
                 .formations {
-                    border: 2px solid #118DD5;
+                    border: 2px solid var(--primary-color);
                 }
 
                 .alura {
-                    border: 2px solid #41F0FD;
+                    border: 2px solid var(--primary-color);
                 }
 
                 .rocketseat {
-                    border: 2px solid #7159C1;
+                    border: 2px solid var(--primary-color);
                 }
 
                 .bradesco {
-                    border: 2px solid #DC1432;
+                    border: 2px solid var(--primary-color);
                 }
 
                 .formations:focus {
-                    box-shadow: 0 5px 6px rgba(17, 141, 213, 0.5);
+                    box-shadow: 0 5px 6px var(--neon-green);
+                    border: 1px solid var(--neon-green);
                 }
 
                 .alura:focus {
-                    box-shadow: 0 5px 6px rgba(65, 240, 253, 0.5);
+                    box-shadow: 0 5px 6px var(--neon-green);
+                    border: 1px solid var(--neon-green);
                 }
 
                 .rocketseat:focus {
-                    box-shadow: 0 5px 6px rgba(113, 89, 193, 0.5);
+                    box-shadow: 0 5px 6px var(--neon-green);
+                    border: 1px solid var(--neon-green);
                 }
 
                 .bradesco:focus {
-                    box-shadow: 0 5px 6px rgba(220, 20, 50, 0.5);
+                    box-shadow: 0 5px 6px var(--neon-green);
+                    border: 1px solid var(--neon-green);
                 }
 
                 .all:focus {
-                    box-shadow: 0 5px 6px rgba(255, 255, 255, 0.5);
+                    box-shadow: 0 5px 6px var(--neon-green);
+                    border: 1px solid var(--neon-green);
                 }
             }
         }
