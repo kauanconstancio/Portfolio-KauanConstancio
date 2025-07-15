@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #0F111A;
+    --background-color-green: #1D372D;
+    --color-green: #00FF9D;
+    --white: #fff;
+    --line-color: #191727;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+body .container {
+    max-width: 1000px;
+}
+
+body .container h1 {
+    font-size: 26px;
+    color: var(--white);
+    font-weight: 500;
+}
+
+body .container .sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 350px;
+    position: fixed;
+    left: 0;
+    height: 100dvh;
+    padding: 40px;
+    border-right: 1px solid var(--line-color);
+}
+
+body .container .sidebar .pages {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+body .container .sidebar .pages a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 16px;
+    transition: all 250ms;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+body .container .sidebar .pages #selected {
+    background-color: var(--background-color-green);
+}
+
+body .container .sidebar .pages a:hover {
+    background-color: var(--background-color-green);
+}
+
+body .container .section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px;
+    margin-left: 350px;
+}
+
+body .container .section h2 {
+    color: var(--white);
+    font-weight: 500;
+}
+
+body .container .section .formations{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+body .container .section .formations .add-formacao{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 405px;
+    height: 352px;
+    position: relative;
+}
+
+body .container .section .formations .add-formacao input{
+    padding: 16px 20px;
+    font-size: 18px;
+    background-color: var(--background-color-green);
+    border: none;
+    outline: none;
+    border-radius: 16px;
+    color: var(--white);
+    font-weight: 500;
+}
+
+body .container .section .formations .add-formacao .select{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+body .container .section .formations .add-formacao .select select{
+    padding: 16px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 16px;
+    background-color: var(--background-color-green);
+    color: var(--white);
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+body .container .section .formations .add-formacao textarea{
+  height: 160px;
+  border-radius: 16px;
+  border: none;
+  padding: 20px;
+  color: var(--white);
+  font-size: 16px;
+  background-color: var(--background-color-green);
+  outline: none;
+  resize: none;
+}
+
+body .container .section .formations .add-formacao textarea::-webkit-scrollbar {
+    display: none;
+}
+
+body .container .section .formations .add-formacao button {
+    width: 187px;
+    padding: 8px 42px;
+    background-color: var(--background-color-green);
+    border-radius: 16px;
+    border: none;
+    color: var(--white);
+    font-size: 18px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body .container .section .formations .formacao-adicionada{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 405px;
+    height: 352px;
+    position: relative;
+}
+
+body .container .section .formations .formacao-adicionada p{
+    padding: 16px 20px;
+    font-size: 18px;
+    background-color: var(--background-color-green);
+    border: none;
+    outline: none;
+    border-radius: 16px;
+    color: var(--white);
+    font-weight: 500;
+}
+
+body .container .section .formations .formacao-adicionada .select{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+body .container .section .formations .formacao-adicionada .select p{
+    padding: 16px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 16px;
+    background-color: var(--background-color-green);
+    color: var(--white);
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+body .container .section .formations .formacao-adicionada .textarea{
+  height: 160px;
+  border-radius: 16px;
+  border: none;
+  padding: 20px;
+  color: var(--white);
+  font-size: 16px;
+  background-color: var(--background-color-green);
+  outline: none;
+  resize: none;
+  overflow: hidden;
+}
+
+body .container .section .formations .formacao-adicionada textarea::-webkit-scrollbar {
+    display: none;
+}
+
+body .container .section .formations .formacao-adicionada button {
+    width: 187px;
+    padding: 8px 42px;
+    background-color: var(--background-color-green);
+    border-radius: 16px;
+    border: none;
+    color: var(--white);
+    font-size: 18px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
