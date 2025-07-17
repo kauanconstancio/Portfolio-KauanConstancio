@@ -160,3 +160,14 @@ body .container .section .projetos .projeto button{
     right: 0;
     bottom: 0;
 }
+
+body .container .section .projetos .projeto select{
+    padding: 16px 20px;
+    border: none;
+    outline: none;
+    background-color: var(--background-color-green);
+    border-radius: 16px;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 500;
+}

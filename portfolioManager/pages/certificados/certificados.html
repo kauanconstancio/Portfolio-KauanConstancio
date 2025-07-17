@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecnologias</title>
-    <link rel="stylesheet" href="projetos.css">
+    <link rel="stylesheet" href="certificados.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 </head>
 
@@ -23,10 +23,10 @@
                 <a href="../tecnologias/tecnologias.html">
                     <img src="../../icons/ChartBarOutline.svg" alt="">Tecnologias
                 </a>
-                <a href="projetos.html" id="selected">
+                <a href="../projetos/projetos.html">
                     <img src="../../icons/ArchiveOutline.svg" alt="">Projetos
                 </a>
-                <a href="../certificados/certificados.html">
+                <a href="../certificados/certificados.html" id="selected">
                     <img src="../../icons/ClipboardCheckOutline.svg" alt="">Certificados
                 </a>
             </div>
@@ -40,8 +40,14 @@
                         <span class="picture__image"></span>
                     </label>
                     <input type="text" placeholder="Título">
-                    <input type="text" placeholder="Link Vercel">
-                    <input type="text" placeholder="Link GitHub">
+                    <input type="text" placeholder="PDF do certificado">
+                    <select name="" id="">
+                        <option value="alura">Alura</option>
+                        <option value="rocketseat">Rocketseat</option>
+                        <option value="bradesco">Bradesco</option>
+                        <option value="santander">Santander</option>
+                        <option value="formations">Formação</option>
+                    </select>
                     <button>Adicionar</button>
                 </div>
             </div>
@@ -53,8 +59,7 @@
 
 
 
-
-    <script src="../../script/projetos.js"></script>
+    <script src="../../script/certificados.js"></script>
 </body>
 
 </html>
