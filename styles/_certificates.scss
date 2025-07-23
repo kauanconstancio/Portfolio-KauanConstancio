@@ -32,42 +32,45 @@
                     cursor: pointer;
                     transition: box-shadow 0.3s;
                 }
-
-                .formations {
-                    border: 2px solid #118DD5;
+                button:focus{
+                    border: 2px solid var(--neon-green);
+                    box-shadow: 0px 20px 79px 0px #00FF9D;
                 }
+                // .formations {
+                //     border: 2px solid #118DD5;
+                // }
 
-                .alura {
-                    border: 2px solid #41F0FD;
-                }
+                // .alura {
+                //     border: 2px solid #41F0FD;
+                // }
 
-                .rocketseat {
-                    border: 2px solid #7159C1;
-                }
+                // .rocketseat {
+                //     border: 2px solid #7159C1;
+                // }
 
-                .bradesco {
-                    border: 2px solid #DC1432;
-                }
+                // .bradesco {
+                //     border: 2px solid #DC1432;
+                // }
 
-                .formations:focus {
-                    box-shadow: 0 5px 6px rgba(17, 141, 213, 0.5);
-                }
+                // .formations:focus {
+                //     box-shadow: 0 5px 6px rgba(17, 141, 213, 0.5);
+                // }
 
-                .alura:focus {
-                    box-shadow: 0 5px 6px rgba(65, 240, 253, 0.5);
-                }
+                // .alura:focus {
+                //     box-shadow: 0 5px 6px rgba(65, 240, 253, 0.5);
+                // }
 
-                .rocketseat:focus {
-                    box-shadow: 0 5px 6px rgba(113, 89, 193, 0.5);
-                }
+                // .rocketseat:focus {
+                //     box-shadow: 0 5px 6px rgba(113, 89, 193, 0.5);
+                // }
 
-                .bradesco:focus {
-                    box-shadow: 0 5px 6px rgba(220, 20, 50, 0.5);
-                }
+                // .bradesco:focus {
+                //     box-shadow: 0 5px 6px rgba(220, 20, 50, 0.5);
+                // }
 
-                .all:focus {
-                    box-shadow: 0 5px 6px rgba(255, 255, 255, 0.5);
-                }
+                // .all:focus {
+                //     box-shadow: 0 5px 6px rgba(255, 255, 255, 0.5);
+                // }
             }
         }
     }
